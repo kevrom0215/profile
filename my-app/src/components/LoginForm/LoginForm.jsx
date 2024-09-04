@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './LoginForm.css';
 import {FaUser, FaLock } from "react-icons/fa";
-import header from "../../assets/header.jpeg"
+import icon from "../../assets/icon.jpg"
 
 const LoginForm = () =>{
     const [username, setUsername] = useState('');
@@ -24,10 +24,16 @@ const LoginForm = () =>{
     return (
         <div className='wrapper'>
             <div className="login-view">
-                <h1>Login</h1>
+                <div>
+                <img src={icon} style={{height: '300px'}} alt="dog-icon"></img>
+                </div>
             </div>
             <div className="input-view">
-            {/* <img src={header} id="login-banner" alt="shiba header"/> */}
+
+            <div>
+
+<h1>Login</h1>
+</div>
             <div className="input-box">
                 <input type="text" placeholder="Username" value={username}
                         onChange={handleUsernameChange} required></input>
