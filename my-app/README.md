@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is live and can be viewed at https://kevrom0215.github.io/profile
+
 ## Available Scripts
 
 In the project directory, you can run:
