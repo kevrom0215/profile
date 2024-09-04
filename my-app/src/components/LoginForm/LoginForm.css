@@ -1,0 +1,85 @@
+
+.wrapper {
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    background-color: whitesmoke;
+}
+
+.wrapper h1 {
+    text-align: center;
+}
+
+#login-banner{
+    height: auto;
+    width: 80%;
+}
+
+.input-box {
+    width: auto;
+    height: 50px;
+    margin: 0.5rem 1rem; /* Adjusted margin */
+    padding: 0.5rem 1rem ;
+}
+
+.input-box input {
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(237, 206, 142);
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem; /* Adjusted font size */
+    padding: 1rem; /* Added padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.input-box ::placeholder {
+    color: black; /* Slightly transparent placeholder color for better readability */
+}
+
+.remember-forgot {
+    display: flex; /* Use Flexbox for alignment */
+    width: 100%;
+    align-items: center; /* Center items vertically */
+    margin-top: 1rem; /* Adjusted margin */
+}
+
+.wrapper button{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid silver;
+    background-color: rgb(51, 163, 208);
+    border-radius: 5px;
+    outline: none;
+    margin-top: auto;
+}
+
+button:hover{
+    background-color: #cccccc;
+}
+
+.input-view{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-view{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.buttons{
+    margin-top: 5rem;
+}
+

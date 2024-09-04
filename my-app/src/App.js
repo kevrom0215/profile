@@ -1,15 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import LoginForm from './components/LoginForm/LoginForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello. Please wait while I develop my own website :)
-        </p>
-      </header>
+    <div className='app-wrapper'>
+      <LoginForm/>
     </div>
   );
 }
