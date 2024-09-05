@@ -1,7 +1,7 @@
 // src/components/NotFound/NotFound.js
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
-import '../styles/global.css';
+import '../../styles/global.css';
 
 const NotFound = () => {
   return (
