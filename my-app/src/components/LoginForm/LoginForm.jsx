@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './LoginForm.css';
-import {FaUser, FaLock } from "react-icons/fa";
 import icon from "../../assets/icon.jpg"
 import {login} from "../../services/authService"
 import { useNavigate } from 'react-router-dom';
@@ -44,8 +43,8 @@ const LoginForm = () =>{
     return (
         <div className='wrapper'>
             <div className="login-view">
-                <div>
-                <img src={icon} style={{height: '300px'}} alt="dog-icon"></img>
+                <div style={{justifyContent: 'center', alignItems:'center', display: "flex"}}>
+                <img src={icon} style={{height: 'auto', width: '30%'}} alt="dog-icon"></img>
                 </div>
             </div>
             <div className="input-view">
