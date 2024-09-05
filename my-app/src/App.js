@@ -1,12 +1,12 @@
 import './App.css';
 import React from 'react';
 import LoginForm from './components/LoginForm/LoginForm';
-import Dashboard from './components/Dashboard/Dashboard';
+import Dashboard from './pages/Dashboard/Dashboard';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';  // Ensure these imports
 import NotFound from './components/NotFound/NotFound';
 import Navbar from './components/NavBar/NavBar';
 import { login, logout as authLogout, isAuthenticated } from './services/authService'; // Import auth service functions
-import Logout from './pages/Logout'
+import Logout from './pages/Logout/Logout'
 import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 
 
