@@ -28,6 +28,7 @@ const AppContent =()=>{
       <div className="app-wrapper">
         <Routes>
             <Route path="/login" element={<LoginForm />} />
+            <Route path="/profile" element={<PrivateRoute element={<LoginForm/>} />} />
             <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
             <Route path="/logout" element={<Logout />} />
             <Route path="/" element={<LoginForm />} />
