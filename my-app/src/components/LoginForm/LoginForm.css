@@ -8,8 +8,9 @@
     height: 80%;
     width: 80%;
     background-color: whitesmoke;
-
     overflow: scroll;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 .wrapper h1 {

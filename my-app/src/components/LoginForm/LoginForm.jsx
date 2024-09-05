@@ -2,10 +2,15 @@ import React, {useState} from "react";
 import './LoginForm.css';
 import {FaUser, FaLock } from "react-icons/fa";
 import icon from "../../assets/icon.jpg"
+import {login} from "../../services/authService"
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () =>{
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState(null);
+    const [success, setSuccess] = useState(null);
+    const navigate = useNavigate();
 
      // Handle input changes
      const handleUsernameChange = (event) => {
@@ -14,11 +19,26 @@ const LoginForm = () =>{
     const handlePasswordChange = (event) => {
         setPassword(event.target.value);
     };
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault(); // Prevent default form submission behavior
         // Log username and password
-        console.log("Username:", username);
-        console.log("Password:", password);
+        try{
+            const response = await login(username, password)
+            if (response.success) {
+                alert(response.message)
+                setSuccess(response.message);
+                setError(null);
+                navigate('/dashboard');
+                // Proceed with what to do after successful login (e.g., redirect or store session)
+              } else {
+                alert(response.message)
+                setError(response.message);
+                setSuccess(null);
+              }
+        }
+        catch(e){
+            setError('Error occured' + e.message);
+        }
     };
 
     return (
