@@ -1,6 +1,6 @@
 
 .wrapper {
-    display: flex;
+    display: grid;
     border-radius: 1rem;
     justify-content: center;
     align-self: center;
@@ -89,6 +89,6 @@ button:hover{
 }
 
 .buttons{
-    margin-top: 5rem;
+    margin-top: 10%;
 }
 

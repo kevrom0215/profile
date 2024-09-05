@@ -8,6 +8,7 @@ import Navbar from './components/NavBar/NavBar';
 import { login, logout as authLogout, isAuthenticated } from './services/authService'; // Import auth service functions
 import Logout from './pages/Logout/Logout'
 import PrivateRoute from './components/PrivateRoute/PrivateRoute'
+import Playground from './pages/Playground/Playground';
 
 
 const AppContent =()=>{
@@ -30,6 +31,7 @@ const AppContent =()=>{
             <Route path="/login" element={<LoginForm />} />
             <Route path="/profile" element={<PrivateRoute element={<LoginForm/>} />} />
             <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
+            <Route path="/playground" element={<PrivateRoute element={<Playground/>}/>}/>
             <Route path="/logout" element={<Logout />} />
             <Route path="/" element={<LoginForm />} />
             <Route path="*" element={<NotFound />} />
