@@ -1,4 +1,12 @@
 .playground-item{
     display: grid;
     background-color: gray;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 2px;
+    overflow: auto;
+    max-height: 30%;
+    min-height: auto;
+    max-width: 100%;
+    min-width: auto;
 }

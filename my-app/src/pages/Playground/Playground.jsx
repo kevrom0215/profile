@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/global.css";
 import "./Playground.css"
+import CoffeeService from "../../services/CoffeeService";
 
 const Playground = () => {
   const [inputValue, setInputValue] = useState("");
@@ -26,7 +27,7 @@ const Playground = () => {
         </div>
       </div>
       <div className="playground-item">
-        <p>hello</p>
+        <CoffeeService></CoffeeService>
       </div>
     </div>
   );
