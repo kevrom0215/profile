@@ -1,5 +1,4 @@
 // services/authService.js
-import axios from 'axios';
 import creds from '../utils/creds.json'
 
 const API_URL = 'https://your-api-url.com/api/auth'; // Replace with your API endpoint
