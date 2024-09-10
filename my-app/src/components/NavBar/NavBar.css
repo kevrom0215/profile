@@ -30,5 +30,5 @@
 }
 
 .navbar-link:hover {
-  text-decoration: underline; /* Underline on hover */
+  color: gray;
 }

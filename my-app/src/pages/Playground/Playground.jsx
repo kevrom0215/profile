@@ -11,7 +11,7 @@ const Playground = () => {
   return (
     <div className="wrapper">
       <div className="playground-item">
-        <form>
+        <form style={{marginTop: '5%'}}>
           <label htmlFor="userInput">Your Input: </label>
           <input
             type="text"
@@ -21,11 +21,11 @@ const Playground = () => {
             placeholder="Type something here..."
           />
         </form>
-        <div style={{ marginTop: "20px" }}>
+      </div>
+      <div className="playground-item">
           <h2>Output:</h2>
           <p>{inputValue}</p> {/* Display the current input value */}
         </div>
-      </div>
       <div className="playground-item">
         <CoffeeService></CoffeeService>
       </div>

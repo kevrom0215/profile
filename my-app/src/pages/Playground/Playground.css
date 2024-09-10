@@ -5,8 +5,7 @@
     padding: 1%;
     border-radius: 2px;
     overflow: auto;
-    max-height: 30%;
-    min-height: auto;
-    max-width: 100%;
-    min-width: auto;
+    min-height: 200px;
+    min-width: 100%;
+    justify-content: center;
 }
