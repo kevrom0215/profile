@@ -46,12 +46,12 @@ function CoffeeService() {
         }}
       >
         {data.map((coffee) => (
-          <div key={coffee.id} style={{ width: "250px", textAlign: "center" }}>
+          <div class="list-item" key={coffee.id} style={{ width: "250px", textAlign: "center" }}>
             <img
-              src={coffee}
+              src={coffee.image}
               alt={coffee.title}
               onError={handleImageError} // Handle broken images
-              style={{ width: "100%", height: "auto", borderRadius: "10px" }}
+              style={{ width: "100%", height: "300px", borderRadius: "10px"}}
             />
             <h2>{coffee.title}</h2>
           </div>

@@ -17,6 +17,7 @@
     text-align: center;
 }
 
+
 #login-banner{
     height: auto;
     width: 80%;
@@ -53,7 +54,7 @@
     margin-top: 1rem; /* Adjusted margin */
 }
 
-.wrapper button{
+.wrapper #loginButton{
     position: relative;
     width: 100%;
     height: 50px;
