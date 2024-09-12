@@ -4,8 +4,8 @@
     margin: 1%;
     padding: 1%;
     border-radius: 2px;
-    overflow: auto;
     min-height: 200px;
     min-width: 100%;
     justify-content: center;
+    overflow: scroll;
 }

@@ -9,6 +9,7 @@ import { login, logout as authLogout, isAuthenticated } from './services/authSer
 import Logout from './pages/Logout/Logout'
 import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 import Playground from './pages/Playground/Playground';
+import Menu from './pages/Menu/Menu';
 
 
 const AppContent =()=>{
@@ -32,6 +33,7 @@ const AppContent =()=>{
             <Route path="/profile" element={<PrivateRoute element={<LoginForm/>} />} />
             <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
             <Route path="/playground" element={<PrivateRoute element={<Playground/>}/>}/>
+            <Route path="/menu" element={<PrivateRoute element={<Menu/>}/>}/>
             <Route path="/logout" element={<Logout />} />
             <Route path="/" element={<LoginForm />} />
             <Route path="*" element={<NotFound />} />
