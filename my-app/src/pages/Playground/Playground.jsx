@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/global.css";
 import "./Playground.css"
-import CoffeeService from "../../services/CoffeeService";
+import CoffeeService from "../../services/useCoffeeService";
 
 const Playground = () => {
   const [inputValue, setInputValue] = useState("");
@@ -11,7 +11,7 @@ const Playground = () => {
   return (
     <div className="wrapper">
       <div className="playground-item">
-        <form style={{marginTop: '5%'}}>
+        <form>
           <label htmlFor="userInput">Your Input: </label>
           <input
             type="text"
@@ -27,7 +27,6 @@ const Playground = () => {
           <p>{inputValue}</p> {/* Display the current input value */}
         </div>
       <div className="playground-item">
-        <CoffeeService></CoffeeService>
       </div>
     </div>
   );
