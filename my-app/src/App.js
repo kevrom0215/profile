@@ -7,35 +7,27 @@ import NotFound from './components/NotFound/NotFound';
 import Navbar from './components/NavBar/NavBar';
 import { login, logout as authLogout, isAuthenticated } from './services/authService'; // Import auth service functions
 import Logout from './pages/Logout/Logout'
-import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 import Playground from './pages/Playground/Playground';
 import Menu from './pages/Menu/Menu';
+import AboutMe from './pages/AboutMe/AboutMe';
 
 
 const AppContent =()=>{
-  const navigate = useNavigate(); 
-  const handleLogout = () =>{
-    authLogout();
-    navigate('/login');
-  }
-  const handleLogin = () =>{
-    authLogout();
-    navigate('/login');
-  }
+  const navigate = useNavigate();
   return (
     <>
       <div>
-        {isAuthenticated() && <Navbar />} 
+        {<Navbar />} 
       </div>
       <div className="app-wrapper">
         <Routes>
-            <Route path="/login" element={<LoginForm />} />
-            <Route path="/profile" element={<PrivateRoute element={<LoginForm/>} />} />
-            <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
-            <Route path="/playground" element={<PrivateRoute element={<Playground/>}/>}/>
-            <Route path="/menu" element={<PrivateRoute element={<Menu/>}/>}/>
+            <Route path="/" element={<AboutMe/>} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/playground" element={<Playground/>}/>
+            <Route path="/about-me" element={<AboutMe/>}/>
+            <Route path="/menu" element={<Menu/>}/>
             <Route path="/logout" element={<Logout />} />
-            <Route path="/" element={<LoginForm />} />
+            <Route path="/profile" element={<LoginForm />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       </div>

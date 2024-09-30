@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import coffee from "../../assets/coffee.jpg";
 
-const CoffeeDisplay = () => {
-  return <div>Coffee Display Component</div>;
-};
 
 const CoffeeList = ({ coffeeData }) => {
   const handleImageError = (e) => {
