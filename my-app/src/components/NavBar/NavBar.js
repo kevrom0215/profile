@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./NavBar.css"; // Import CSS module for styling
 import { logout as authLogout } from "../../services/authService";
+import icons from '../../assets/icons.json'
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -12,27 +13,46 @@ const Navbar = () => {
     authLogout(); // Call the logout function
     navigate("/logout"); // Redirect to the login page
   };
+
+  const githubIcon = icons.github_icon
   return (
     <nav className="navbar">
       <ul className="navbar-list">
+        <h2 className="navbar-item">
+          <svg width="50" height="50" viewBox="0 0 20 20" fill="white">
+            <path d={githubIcon}/>
+          </svg>
+          Kenneth
+        </h2>
         <li className="navbar-item">
-          <Link to="/dashboard" className="navbar-link">
-            Dashboard
+          <Link to="/about-me" className="navbar-link">
+           About Me
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/menu" className="navbar-link">
-            Menu
+          <Link to="/skills" className="navbar-link">
+            Skills
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/playground" className="navbar-link">
-            Playground
+          <Link to="/work" className="navbar-link">
+            Work
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/logout" onClick={handleLogout} className="navbar-link">
-            Logout
+          <Link to="/projects" onClick={handleLogout} className="navbar-link">
+            Projects
+          </Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/contact-me" onClick={handleLogout} className="navbar-link">
+            Contact Me
+          </Link>
+        </li>
+        
+        <li className="navbar-item">
+          <Link to="/resume" onClick={handleLogout} className="navbar-link">
+            Resume
           </Link>
         </li>
       </ul>
