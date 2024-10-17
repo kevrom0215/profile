@@ -9,11 +9,6 @@ import icons from '../../assets/icons.json'
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    authLogout(); // Call the logout function
-    navigate("/logout"); // Redirect to the login page
-  };
-
   const githubIcon = icons.github_icon
   return (
     <nav className="navbar">
@@ -40,18 +35,18 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/projects" onClick={handleLogout} className="navbar-link">
+          <Link to="/projects" className="navbar-link">
             Projects
           </Link>
         </li>
         <li className="navbar-item">
-          <Link to="/contact-me" onClick={handleLogout} className="navbar-link">
+          <Link to="/contact-me" className="navbar-link">
             Contact Me
           </Link>
         </li>
         
         <li className="navbar-item">
-          <Link to="/resume" onClick={handleLogout} className="navbar-link">
+          <Link to="/resume" className="navbar-link">
             Resume
           </Link>
         </li>

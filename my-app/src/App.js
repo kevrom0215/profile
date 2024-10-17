@@ -10,6 +10,8 @@ import Logout from './pages/Logout/Logout'
 import Playground from './pages/Playground/Playground';
 import Menu from './pages/Menu/Menu';
 import AboutMe from './pages/AboutMe/AboutMe';
+import ContactMe from './pages/ContactMe/ContactMe'
+import Skills from './pages/Skills/Skills';
 
 
 const AppContent =()=>{
@@ -26,8 +28,9 @@ const AppContent =()=>{
             <Route path="/playground" element={<Playground/>}/>
             <Route path="/about-me" element={<AboutMe/>}/>
             <Route path="/menu" element={<Menu/>}/>
-            <Route path="/logout" element={<Logout />} />
-            <Route path="/profile" element={<LoginForm />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact-me" element={<ContactMe />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
       </div>
