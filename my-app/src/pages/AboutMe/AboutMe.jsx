@@ -43,31 +43,6 @@ const AboutMe = () => {
             }}
           />
         </div>
-        <div className="grid-item">
-          <img
-            src={kenneth}
-            alt="picture of me"
-            style={{
-              width: "80%",
-              height: "auto",
-              borderRadius: "10px",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        <div className="grid-item">
-          <img
-            src={kenneth}
-            alt="picture of me"
-            style={{
-              width: "80%",
-              height: "auto",
-              borderRadius: "10px",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        
       </div>
       
     </div>
