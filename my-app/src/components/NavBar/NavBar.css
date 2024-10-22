@@ -49,6 +49,17 @@
   cursor: pointer;
   display: none; /* Hidden by default (only shown in mobile view) */
 }
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background: none; /* Keep the background the same */
+  border: none;     /* Keep the border the same */
+  color: white;     /* Keep the color the same */
+  outline: none;    /* Remove focus outline if desired */
+}
+
+.navbar-toggle:focus-visible {
+  outline: none; /* Remove focus outline when visible */
+}
 
 /* Navbar items */
 .navbar-item {

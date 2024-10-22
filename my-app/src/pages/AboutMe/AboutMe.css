@@ -22,12 +22,16 @@
     text-align: center;
     justify-content: center;
     padding: 1rem;
+    min-height: 400px;
   }
   
   /* Media query for responsive behavior */
   @media (max-width: 1000px) {
     .grid-container {
       grid-template-columns: 1fr; /* Stack items in 1 column */
+    }
+    .grid-item {
+        width: 100%;
     }
   }
   
