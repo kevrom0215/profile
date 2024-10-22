@@ -1,43 +1,50 @@
 import React from "react";
+import kenneth from "../../assets/me.jpg";
+import "./AboutMe.css";
 
 const AboutMe = () => {
-  const styles = {
-    blinkingDot: {
-      width: "10px",
-      height: "10px",
-      backgroundColor: "black", // Color of the dot
-      borderRadius: "50%", // Make it a circle
-      marginTop: "10px",
-      animation: "blink 1s infinite", // Apply the blink animation
-      marginLeft: '.5rem'
-    },
-    about: {
-      display: "flex",
-      flexDirection: "row", // Correct camelCase property
-      alignItems: "left",
-      textAlign: 'left' // Optional: vertically align items
-    },
-  };
 
   return (
     <div className="wrapper">
-      <div style={styles.about}>
-        <h2>Hi I am Kenneth</h2>
-        <div style={styles.blinkingDot}></div>
+      <div className="grid-container">
+        <div className="grid-item">
+          <div className="about">
+            <h2>Hi, I am Kenneth {"\u263A"}</h2>
+          </div>
+          <p className="description">
+            A Software Engineer. Full Stack Developer at Pointwest, focusing on
+            Java and Angular technologies.
+          </p>
+          <p className="description">
+            When I’m not diving deep into code, you’ll find me immersed in a
+            variety of hobbies that fuel my creativity and joy.
+          </p>
+          <div className="description">
+          <h3>More About Me</h3>
+          <ul style={{ textAlign: "left", listStyle: "none" }}>
+            <li>🚗{"\u00A0"}{"\u00A0"}{"\u00A0"}Car Enthusiast</li>
+            <li>🤖{"\u00A0"}{"\u00A0"}{"\u00A0"}Gundam Enthusiast</li>
+            <li>🐕{"\u00A0"}{"\u00A0"}{"\u00A0"}Dog Lover</li>
+          </ul>
+          </div>
+          
+        </div>
+        <div className="grid-item">
+          <img
+            src={kenneth}
+            alt="picture of me"
+            style={{
+              width: "80%",
+              minHeight: "400px",
+              maxHeight: "500px",
+              borderRadius: "10px",
+              objectFit: "cover",
+            }}
+          />
+        </div>
+        
       </div>
-      {/* Define the keyframes outside of the styled div */}
-      <style>
-        {`
-          @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-          }
-        `}
-      </style>
-      <p>
-        My programming career started when I was still in college. 
-      </p>
+      
     </div>
   );
 };

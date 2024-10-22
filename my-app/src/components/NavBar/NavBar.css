@@ -1,39 +1,98 @@
 /* src/components/NavBar/NavBar.css */
 .navbar {
-  position: fixed; /* Stick the navbar to the top */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Span the entire width of the screen */
-  background-color: #333; /* Background color */
-  color: white; /* Text color */
-  padding: 10px 0; /* Padding for spacing */
-  z-index: 1000; /* Ensure it's above other content */
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.navbar-brand {
+  display: none;
+  align-items: center;
+  text-align: center;
+  padding: 0 0 0 10px;
 }
 
+.navbar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Header with brand and toggle button */
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Navbar list (default: hidden on small screens) */
 .navbar-list {
-  list-style-type: none; /* Remove default list styling */
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Arrange items horizontally */
-  justify-content: space-between; /* Space items evenly */
+  display: flex;
+  justify-content: space-between;
+  transition: max-height .3s ease;
+  overflow: hidden;
 }
 
+/* Hamburger menu button */
+.navbar-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hidden by default (only shown in mobile view) */
+}
+
+/* Navbar items */
 .navbar-item {
   margin: 0;
   padding: 1rem;
-  justify-content: center;
-  align-items: center;
   display: flex;
-  height: 3vh;
+  align-items: center;
 }
 
 .navbar-link {
-  color: white; /* Text color for links */
-  text-decoration: none; /* Remove underline */
-  padding: 0 15px; /* Padding for spacing */
-  font-size: 16px; /* Font size */
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 16px;
 }
 
 .navbar-link:hover {
   color: gray;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column; /* Stack items vertically */
+    max-height: 0; /* Hide by default */
+  }
+
+  .navbar-list.open {
+    max-height: 100%; /* Show when open */
+  }
+
+  .navbar-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .brand-item{
+    display: none;
+  }
 }

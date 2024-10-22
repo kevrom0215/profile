@@ -1,0 +1,34 @@
+/* Grid container for skills */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    align-items: center;
+    width: 80%;
+  }
+  
+  /* Skill container for each skill */
+  .skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+  }
+  
+  /* Image styling */
+  .skill-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Media query for responsive behavior */
+  @media (max-width: 1000px) {
+    .grid {
+      grid-template-columns: 1fr; /* Switch to 1 column on small screens */
+      gap: 20px;
+    }
+  }
+  
