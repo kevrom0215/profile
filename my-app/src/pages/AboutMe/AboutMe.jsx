@@ -35,36 +35,14 @@ const AboutMe = () => {
             alt="picture of me"
             style={{
               width: "80%",
-              height: "auto",
+              minHeight: "400px",
+              maxHeight: "500px",
               borderRadius: "10px",
               objectFit: "cover",
             }}
           />
         </div>
-        <div className="grid-item">
-          <img
-            src={kenneth}
-            alt="picture of me"
-            style={{
-              width: "80%",
-              height: "auto",
-              borderRadius: "10px",
-              objectFit: "cover",
-            }}
-          />
-        </div>
-        <div className="grid-item">
-          <img
-            src={kenneth}
-            alt="picture of me"
-            style={{
-              width: "80%",
-              height: "auto",
-              borderRadius: "10px",
-              objectFit: "cover",
-            }}
-          />
-        </div>
+        
       </div>
       
     </div>
