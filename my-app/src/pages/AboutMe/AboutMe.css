@@ -1,0 +1,38 @@
+/* Container that holds the about section */
+.about {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: left;
+    text-align: left;
+    width: 100%;
+  }
+  
+  /* Grid container for the layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+  
+  /* Styling for each grid item */
+  .grid-item {
+    color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  /* Media query for responsive behavior */
+  @media (max-width: 1000px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stack items in 1 column */
+    }
+  }
+  
+  /* Description text style */
+  .description {
+    text-align: left !important;
+  }
+  

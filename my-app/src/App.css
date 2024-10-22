@@ -15,4 +15,5 @@ html{
   justify-content: center;
   height: 95vh;
   display: flex;
+  margin-top: 5rem;
 }
