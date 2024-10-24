@@ -19,7 +19,6 @@ const Navbar = () => {
         <svg width="40" height="40" viewBox="0 0 20 20" fill="white">
             <path d={githubIcon} />
           </svg>
-          <span>Kenneth</span>
           ☰
         </button>
 
