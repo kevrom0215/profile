@@ -12,6 +12,7 @@ import Menu from './pages/Menu/Menu';
 import AboutMe from './pages/AboutMe/AboutMe';
 import ContactMe from './pages/ContactMe/ContactMe'
 import Skills from './pages/Skills/Skills';
+import Footer from './components/Footer/Footer';
 
 
 const AppContent =()=>{
@@ -33,6 +34,9 @@ const AppContent =()=>{
 
             <Route path="*" element={<NotFound />} />
           </Routes>
+      </div>
+      <div>
+        {<Footer />} 
       </div>
     </>
     

@@ -8,7 +8,7 @@
     height: 80%;
     width: 80%;
     background-color: whitesmoke;
-    overflow: scroll;
+    overflow: auto;
     padding: 2rem;
     margin: 2rem;
 }
