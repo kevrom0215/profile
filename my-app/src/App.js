@@ -34,6 +34,9 @@ const AppContent =()=>{
             <Route path="*" element={<NotFound />} />
           </Routes>
       </div>
+      {/* <div>
+        {<Footer />} 
+      </div> */}
     </>
     
   );

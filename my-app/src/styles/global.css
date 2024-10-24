@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-    padding: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    height: 100%;
+    width: 100%;
 }
