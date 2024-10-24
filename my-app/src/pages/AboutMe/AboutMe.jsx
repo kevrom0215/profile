@@ -1,8 +1,10 @@
 import React from "react";
 import kenneth from "../../assets/me.jpg";
 import "./AboutMe.css";
+import icons from "../../assets/icons.json";
 
 const AboutMe = () => {
+  const githubIcon = icons.github_icon;
   const skills = [
     {
       name: "Angular",
@@ -56,6 +58,49 @@ const AboutMe = () => {
               When I’m not diving deep into code, you’ll find me immersed in a
               variety of hobbies that fuel my passion and joy.
             </p>
+            <div className="social-media-grid">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid-item"
+              >
+                <svg width="40" height="40" viewBox="0 0 20 20" fill="black">
+                  <path d={githubIcon} />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid-item"
+              >
+                <svg width="40" height="40" viewBox="0 0 20 20" fill="black">
+                  <path d={githubIcon} />
+                </svg>
+              </a>
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid-item"
+              >
+                <svg width="40" height="40" viewBox="0 0 20 20" fill="black">
+                  <path d={githubIcon} />
+                </svg>
+              </a>
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid-item"
+              >
+                <svg width="40" height="40" viewBox="0 0 20 20" fill="black">
+                  <path d={githubIcon} />
+                </svg>
+              </a>
+              
+            </div>
           </div>
           <div className="grid-item">
             <img
@@ -70,18 +115,7 @@ const AboutMe = () => {
               }}
             />
           </div>
-          {/* <div className="grid-item">
-        <iframe
-          width="400"
-          height="500"
-          src="https://www.youtube.com/embed/Eu_KKnNoNY8"
-          title="Clark International Speedway First Lap"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div> */}
+
           <div className="grid-item">
             <p className="description">
               My love for software engineering started way back in highschool
@@ -144,7 +178,6 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import LoginForm from './components/LoginForm/LoginForm';
 import Dashboard from './pages/Dashboard/Dashboard';
 import { BrowserRouter as Router, Route, Routes, useNavigate, HashRouter } from 'react-router-dom';  // Ensure these imports
 import NotFound from './components/NotFound/NotFound';

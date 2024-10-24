@@ -7,7 +7,7 @@ const ContactMe = () => {
     },
   };
   return (
-    <div className="wrapper">
+    <div className="blank">
       <div style={styles.grid}>
         <div>Email:</div>
         <div>kennetharaga@gmail.com</div>
