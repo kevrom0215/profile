@@ -1,38 +1,74 @@
 /* Container that holds the about section */
 .about {
-    display: flex;
-    flex-direction: row; /* Arrange items horizontally */
-    align-items: left;
-    text-align: left;
-    width: 100%;
-  }
-  
-  /* Grid container for the layout */
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: left;
+  text-align: left;
+  width: 100%;
+}
+
+/* Grid container for the layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+/* Styling for each grid item */
+.grid-item {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Media query for responsive behavior */
+@media (max-width: 1000px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-    width: 80%;
-    height: 80%;
-    margin: auto;
+    grid-template-columns: 1fr; /* Stack items in 1 column */
   }
-  
-  /* Styling for each grid item */
-  .grid-item {
-    color: black;
-    text-align: center;
-    justify-content: center;
-    padding: 1rem;
+}
+
+/* Description text style */
+.description {
+  text-align: left !important;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -10px; /* Start slightly off-screen */
+  animation: fall 5s linear infinite, sway 2s ease-in-out infinite alternate; /* Both animations */
+}
+
+/* Confetti container */
+.confetti-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(0);
   }
-  
-  /* Media query for responsive behavior */
-  @media (max-width: 1000px) {
-    .grid-container {
-      grid-template-columns: 1fr; /* Stack items in 1 column */
-    }
+  100% {
+    transform: translateY(200vh); /* Fall down with side movement */
   }
-  
-  /* Description text style */
-  .description {
-    text-align: left !important;
+}
+
+/* Swaying effect for a side-to-side movement */
+@keyframes sway {
+  0% {
+    transform: translateX(-10px);
   }
-  
+  100% {
+    transform: translateX(10px);
+  }
+}
