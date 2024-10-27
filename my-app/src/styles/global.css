@@ -1,18 +1,15 @@
 .wrapper {
-    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
     padding-bottom: 2rem;
     margin-top: 4rem;
-    height: fit-content;
-    width: auto;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .blank{
-    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
