@@ -28,7 +28,13 @@
 /* Media query for responsive behavior */
 @media (max-width: 1000px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Stack items in 1 column */
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center; /* Stack items in 1 column */
+  }
+  .grid-item{
+    justify-content: center;
+    align-items: center;
   }
 }
 
