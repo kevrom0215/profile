@@ -1,4 +1,8 @@
-# profile
-An open source code for a limited time.A simple webapp that is focused on creating a react project
+Profile
+An open-source project available for a limited time—a simple web app powered by React.
 
-This project is live and can be viewed at https://kevrom0215.github.io/profile/
+This repository is published solely for use with GitHub Pages.
+
+Contributions and suggestions are welcome! 😊
+
+You can view the live version here: [Profile.](https://kevrom0215.github.io/profile/)
