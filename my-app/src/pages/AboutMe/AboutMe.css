@@ -39,7 +39,6 @@
 
 /* Footer.css */
 .footer {
-  position: fixed;
   background-color: #333; /* Dark background */
   color: #fff; /* White text */
   padding: 1rem 0; /* Padding around the footer */
