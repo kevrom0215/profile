@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import '@mui/icons-material';
 import Dashboard from './pages/Dashboard/Dashboard';
 import { BrowserRouter as Router, Route, Routes, useNavigate, HashRouter } from 'react-router-dom';  // Ensure these imports
 import NotFound from './components/NotFound/NotFound';
@@ -9,8 +10,8 @@ import Logout from './pages/Logout/Logout'
 import Playground from './pages/Playground/Playground';
 import Menu from './pages/Menu/Menu';
 import AboutMe from './pages/AboutMe/AboutMe';
-import ContactMe from './pages/ContactMe/ContactMe'
-import Skills from './pages/Skills/Skills';
+import ContactMe from './pages/ContactMe/ContactMe';
+import 'material-icons/iconfont/material-icons.css';
 
 
 const AppContent =()=>{
@@ -27,7 +28,6 @@ const AppContent =()=>{
             <Route path="/playground" element={<Playground/>}/>
             <Route path="/about-me" element={<AboutMe/>}/>
             <Route path="/menu" element={<Menu/>}/>
-            <Route path="/skills" element={<Skills />} />
             <Route path="/contact-me" element={<ContactMe />} />
 
             <Route path="*" element={<NotFound />} />

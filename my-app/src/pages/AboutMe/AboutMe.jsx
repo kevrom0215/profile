@@ -2,6 +2,7 @@ import React from "react";
 import kenneth from "../../assets/me.jpg";
 import "./AboutMe.css";
 import icons from "../../assets/icons.json";
+import pikachu from "../../assets/pikachu.gif";
 
 const AboutMe = () => {
   const createConfetti = (numberOfPieces) => {
@@ -13,11 +14,16 @@ const AboutMe = () => {
           className="confetti"
           style={{
             left: `${Math.random() * 100}%`,
-            backgroundColor: `hsl(${Math.random() * 360}, 80%, 60%)`,
             animationDuration: `${Math.random() * 2 + 3}s`, // Random duration between 3s and 5s
             "--sway": swayValue,
           }}
-        />
+        >
+          <img
+            src={pikachu}
+            alt="Pikachu"
+            style={{ objectFit: "contain", height: "20px", width: "20px" }}
+          />
+        </div>
       );
     });
   };
@@ -157,16 +163,16 @@ const AboutMe = () => {
               </div>
             </div>
           </div>
-          <div className="grid-item">
+          <div className="grid-item" style={{ textAlign: "center" }}>
             <img
               src={kenneth}
               alt="picture of me"
               style={{
                 width: "80%",
-                minHeight: "400px",
-                maxHeight: "500px",
+                height: "500px",
                 borderRadius: "10px",
-                objectFit: "cover",
+                objectFit: "contain",
+                padding: "1rem",
               }}
             />
           </div>
@@ -185,12 +191,12 @@ const AboutMe = () => {
               Here are the technologies that I have been working on recently :
             </p>
             <ul className="description">
-              <li>Angular</li>
-              <li>React</li>
-              <li>Java</li>
-              <li>MySQL</li>
-              <li>NodeJs</li>
-              <li>AWS Services</li>
+              <li className="pikachu">Angular</li>
+              <li className="pikachu">React</li>
+              <li className="pikachu">Java</li>
+              <li className="pikachu">MySQL</li>
+              <li className="pikachu">NodeJs</li>
+              <li className="pikachu">AWS Services</li>
             </ul>
           </div>
           <div className="grid-item">
@@ -211,8 +217,81 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
+        <div className="grid-container">
+          <div>
+            <h2 className="description">Where I've worked</h2>
+          </div>
+          <div></div>
+          <div className="grid-item employer">
+            <div>
+              <img
+                src="https://about.pointwest.com.ph/hs-fs/hubfs/Pointwest%20Logo.png?width=9100&height=2890&name=Pointwest%20Logo.png"
+                alt="Pointwest Logo"
+                style={{height:100}}
+              />
+            </div>
+            <div style={{textAlign:"center"}}>2021 - Present</div>
+          </div>
+          <div className="grid-item">
+            <ul>
+              <li className="pikachu">
+                Refactored legacy codebases for improved maintainability,
+                facilitating easier future updates.
+              </li>
+              <li className="pikachu">
+                Conducted comprehensive code reviews to enhance code quality
+                across team projects.
+              </li>
+              <li className="pikachu">
+                Provided mentorship and technical guidance to junior developers,
+                fostering a collaborative team environment.
+              </li>
+              <li className="pikachu">
+                Deployed a WordPress Lightsail instance with a CDN, load
+                balancer, an installed RDS database, and a custom domain using
+                GoDaddy, ensuring scalability and optimized performance.
+              </li>
+              <li className="pikachu">
+                Enabled SNS notifications on the Lightsail webpage to manage and
+                respond to company inquiries efficiently.
+              </li>
+              <li className="pikachu">
+                Developed and maintained unit tests using Jasmine, ensuring code
+                stability and early detection of issues.
+              </li>
+              <li className="pikachu">
+                Estimated cloud costs for the Lightsail website, optimizing
+                resource usage and balancing performance with budget
+                considerations.
+              </li>
+              <li className="pikachu">
+                Currently developing an application by merging two existing apps
+                into a unified solution, streamlining functionality and
+                improving user experience.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="description">Education</h2>
+          </div>
+          <div>
+
+          </div>
+          <div className="grid-item">
+          <img src={"https://www.dlsu.edu.ph/wp-content/uploads/2024/10/dlsu-gcoe-logo-300x169.png"} style={{height:150}}/>
       </div>
-      <div className="footer">
+      <div className="grid-item">
+        <p className="description">
+          De La Salle University Manila
+        </p>
+        <p>BS Mechanical Engineering Minor in Mechatronics Engineering
+        </p>
+      </div>
+        </div>
+       
+      </div>
+      
+      {/* <div className="footer">
         <div className="footer-content">
           <p>© 2024 Kenneth. All rights reserved.</p>
           <div className="socials">
@@ -232,7 +311,7 @@ const AboutMe = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
