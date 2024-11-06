@@ -65,8 +65,8 @@ const AboutMe = () => {
       <div className="wrapper">
         <div className="grid-container">
           <div className="grid-item">
-            <div className="about">
-              <h2>Hi, I am Kenneth </h2>
+            <div>
+              <h2 className="description">Hi, I am Kenneth </h2>
             </div>
             <p className="description">A Software Engineer.</p>
             <p className="description">
@@ -281,7 +281,7 @@ const AboutMe = () => {
           <img src={"https://www.dlsu.edu.ph/wp-content/uploads/2024/10/dlsu-gcoe-logo-300x169.png"} style={{height:150}}/>
       </div>
       <div className="grid-item">
-        <p className="description">
+        <p>
           De La Salle University Manila
         </p>
         <p>BS Mechanical Engineering Minor in Mechatronics Engineering

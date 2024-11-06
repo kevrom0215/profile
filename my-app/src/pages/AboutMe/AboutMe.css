@@ -13,17 +13,17 @@
   grid-template-columns: 1fr 1fr; /* 2 columns */
   margin: auto;
   width: 80%;
+  padding-top: 1rem;
 }
 
 /* Styling for each grid item */
 .grid-item {
   color: black;
-  margin: auto;
   align-self: center;
   justify-self: center;
-  padding: 1rem;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 /* Media query for responsive behavior */
@@ -31,7 +31,8 @@
   .grid-container {
     grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center; /* Stack items in 1 column */
+    align-items: center;
+    text-align: left;
   }
   .grid-item {
     justify-content: center;
@@ -41,7 +42,10 @@
 
 /* Description text style */
 .description {
+  margin: 1rem;
+  padding: 1rem;
   text-align: left !important;
+  justify-items: left;
 }
 
 /* Footer.css */
