@@ -166,7 +166,7 @@ const AboutMe = () => {
           <div className="grid-item" style={{ textAlign: "center" }}>
             <img
               src={kenneth}
-              alt="picture of me"
+              alt="self"
               style={{
                 width: "80%",
                 height: "500px",
@@ -291,27 +291,7 @@ const AboutMe = () => {
        
       </div>
       
-      {/* <div className="footer">
-        <div className="footer-content">
-          <p>© 2024 Kenneth. All rights reserved.</p>
-          <div className="socials">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </div> */}
+      
     </div>
   );
 };

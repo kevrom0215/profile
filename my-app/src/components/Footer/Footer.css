@@ -1,0 +1,32 @@
+
+/* Footer.css */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 1rem 0; /* Padding around the footer */
+    text-align: center; /* Center text */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0;
+    width: 100wh; /* Full width */
+    height: 5rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+  }
+  
+  .socials {
+    margin-top: 0.5rem; /* Spacing above social links */
+  }
+  
+  .socials a {
+    color: #fff; /* White text for links */
+    margin: 0 1rem; /* Spacing between links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .socials a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }

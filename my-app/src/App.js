@@ -11,6 +11,7 @@ import Playground from './pages/Playground/Playground';
 import Menu from './pages/Menu/Menu';
 import AboutMe from './pages/AboutMe/AboutMe';
 import ContactMe from './pages/ContactMe/ContactMe';
+import Footer from './components/Footer/Footer';
 import 'material-icons/iconfont/material-icons.css';
 
 
@@ -33,9 +34,9 @@ const AppContent =()=>{
             <Route path="*" element={<NotFound />} />
           </Routes>
       </div>
-      {/* <div>
+      <div>
         {<Footer />} 
-      </div> */}
+      </div>
     </>
     
   );
