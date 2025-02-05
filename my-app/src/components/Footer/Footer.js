@@ -8,14 +8,14 @@ const Footer = () => {
           <p>© 2024 Kenneth. All rights reserved.</p>
           <div className="socials">
             <a
-              href="https://github.com"
+              href="https://github.com/kevrom0215"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://ph.linkedin.com/in/kenneth-araga-81a4261b2"
               target="_blank"
               rel="noopener noreferrer"
             >
