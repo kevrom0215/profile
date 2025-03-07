@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import '@mui/icons-material';
 import Dashboard from './pages/Dashboard/Dashboard';
 import { BrowserRouter as Router, Route, Routes, useNavigate, HashRouter } from 'react-router-dom';  // Ensure these imports
 import NotFound from './components/NotFound/NotFound';
@@ -12,7 +11,6 @@ import Menu from './pages/Menu/Menu';
 import AboutMe from './pages/AboutMe/AboutMe';
 import ContactMe from './pages/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
-import 'material-icons/iconfont/material-icons.css';
 
 
 const AppContent =()=>{
