@@ -34,10 +34,23 @@
     align-items: center; /* Stack items in 1 column */
   }
   .grid-item {
-    width: 80%;
+    margin: 1vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    overflow: hidden;
   }
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+  .social-media-grid{
+    width: auto;
+    gap: 1px; /* Space between grid items */
+    padding: 1px;
+  }
+  
 }
 
 /* Description text style */
@@ -187,5 +200,6 @@
   font-size: 0.8em; /* Adjusts the size of the text */
   margin: 5px; /* Adjusts the space outside the list item */
 }
+
 
 

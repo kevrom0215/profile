@@ -71,7 +71,7 @@ const AboutMe = () => {
             <p className="description">A Software Engineer.</p>
             <p className="description">
               Full Stack Developer/Cloud Data Engineer at Pointwest, focusing on
-              Java and Angular technologies.
+              Java, Angular, and AWS technologies.
             </p>
             <p className="description">
               Currently I am focused on building my profile to be better each
@@ -223,14 +223,14 @@ const AboutMe = () => {
           </div>
           <div></div>
           <div className="grid-item employer">
-            <div>
+            <div className="logo">
               <img
-                src="https://about.pointwest.com.ph/hs-fs/hubfs/Pointwest%20Logo.png?width=9100&height=2890&name=Pointwest%20Logo.png"
+                src="https://rdblobprod.blob.core.windows.net/prod/custom/company/original/5e156c3f98a73.jpeg"
                 alt="Pointwest Logo"
-                style={{height:100}}
+                style={{ height: 100 }}
               />
             </div>
-            <div style={{textAlign:"center"}}>2021 - Present</div>
+            <div style={{ textAlign: "center" }}>2021 - Present</div>
           </div>
           <div className="grid-item">
             <ul>
@@ -271,27 +271,44 @@ const AboutMe = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="grid-container">
           <div>
             <h2 className="description">Education</h2>
           </div>
-          <div>
-
+          <div></div>
+          <div className="grid-item logo">
+            <img
+              src={
+                "https://www.dlsu.edu.ph/wp-content/uploads/2024/10/dlsu-gcoe-logo-300x169.png"
+              }
+              style={{ height: 150 }}
+            />
           </div>
           <div className="grid-item">
-          <img src={"https://www.dlsu.edu.ph/wp-content/uploads/2024/10/dlsu-gcoe-logo-300x169.png"} style={{height:150}}/>
-      </div>
-      <div className="grid-item">
-        <p className="description">
-          De La Salle University Manila
-        </p>
-        <p>BS Mechanical Engineering Minor in Mechatronics Engineering
-        </p>
-      </div>
+            <p>De La Salle University Manila</p>
+            <p>BS Mechanical Engineering Minor in Mechatronics Engineering</p>
+          </div>
         </div>
-       
+        <div className="grid-container">
+          <div>
+            <h2 className="description">Certification</h2>
+          </div>
+          <div></div>
+          <div className="grid-item logo">
+            <img
+              src={
+                "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+              }
+              style={{ height: 150 }}
+            />
+          </div>
+          <div className="grid-item">
+            <p>AWS Certified Cloud Practitioner</p>
+            <p>Issued on Feb 2025 - Expires 2028</p>
+          </div>
+        </div>
       </div>
-      
-      
     </div>
   );
 };
