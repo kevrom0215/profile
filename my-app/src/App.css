@@ -12,14 +12,14 @@ html, body {
 
 html{
   /* background-image: url('./assets/background.jpg'); */
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
 }
 
 .app-wrapper{
   justify-content: center;
-  display: flex;
+  display: block;
   width: 100%;
   height: 100%;
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 20px;
 }
