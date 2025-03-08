@@ -225,12 +225,12 @@ const AboutMe = () => {
           <div className="grid-item employer">
             <div className="logo">
               <img
-                src="https://rdblobprod.blob.core.windows.net/prod/custom/company/original/5e156c3f98a73.jpeg"
+                src="https://pointwest.com/wp-content/uploads/2024/06/Pointwest-logo-footer.svg-2.png"
                 alt="Pointwest Logo"
-                style={{ height: 100 }}
+                style={{ height: 70, backgroundColor: "#034F72",margin: 10,padding:10
+                 }}
               />
             </div>
-            <div style={{ textAlign: "center" }}>2021 - Present</div>
           </div>
           <div className="grid-item">
             <ul>
