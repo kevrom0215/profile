@@ -41,16 +41,21 @@
     align-self: center;
     overflow: hidden;
   }
-  .logo{
+  .logo {
     display: flex;
     justify-content: center;
   }
-  .social-media-grid{
-    width: auto;
-    gap: 1px; /* Space between grid items */
-    padding: 1px;
+  .social-media-grid {
+    display: grid !important;
+    place-items: center !important; /* Centers items in both axes */
+    text-align: center !important;
+    gap: 5px !important;
+    padding: 5px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
-  
+  .confetti-container{
+    visibility: hidden;
+  }
 }
 
 /* Description text style */
@@ -194,12 +199,9 @@
 
 .pikachu {
   list-style: none;
-  background: url('../../assets/pikachu.gif') no-repeat left center; /* Use background instead of list-style */
+  background: url("../../assets/pikachu.gif") no-repeat left center; /* Use background instead of list-style */
   background-size: 20px 20px; /* Adjust the size of the GIF */
   padding-left: 25px; /* Adjust for the background image size */
   font-size: 0.8em; /* Adjusts the size of the text */
   margin: 5px; /* Adjusts the space outside the list item */
 }
-
-
-
