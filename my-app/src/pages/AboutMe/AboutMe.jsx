@@ -1,7 +1,8 @@
-import React from "react";
+import {React,useState,useEffect} from "react";
 import kenneth from "../../assets/me.jpg";
+import car from "../../assets/car.jpeg"
+import hills from "../../assets/hills.jpeg"
 import "./AboutMe.css";
-import icons from "../../assets/icons.json";
 import pikachu from "../../assets/pikachu.gif";
 
 const AboutMe = () => {
@@ -26,6 +27,27 @@ const AboutMe = () => {
         </div>
       );
     });
+  };
+  const [index, setIndex] = useState(0);
+  const images = [
+    kenneth,car,hills
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup function
+  }, []);
+  
+
+  const nextSlide = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
   const skills = [
     {
@@ -164,17 +186,15 @@ const AboutMe = () => {
             </div>
           </div>
           <div className="grid-item" style={{ textAlign: "center" }}>
-            <img
-              src={kenneth}
-              alt="self"
-              style={{
-                width: "80%",
-                height: "500px",
-                borderRadius: "10px",
-                objectFit: "contain",
-                padding: "1rem",
-              }}
-            />
+            <div className="instax">
+              <img src={images[index]} alt="Slideshow" className="slide" />
+              <button className="prev" onClick={prevSlide}>
+                &#10094;
+              </button>
+              <button className="next" onClick={nextSlide}>
+                &#10095;
+              </button>
+            </div>
           </div>
 
           <div className="grid-item">
@@ -227,8 +247,12 @@ const AboutMe = () => {
               <img
                 src="https://pointwest.com/wp-content/uploads/2024/06/Pointwest-logo-footer.svg-2.png"
                 alt="Pointwest Logo"
-                style={{ height: 70, backgroundColor: "#034F72",margin: 10,padding:10
-                 }}
+                style={{
+                  height: 70,
+                  backgroundColor: "#034F72",
+                  margin: 10,
+                  padding: 10,
+                }}
               />
             </div>
           </div>
