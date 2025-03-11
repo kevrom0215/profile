@@ -4,6 +4,8 @@ export default function ContactForm() {
   return (
     <div className="form">
       <div className="gridly">
+
+      <h2 className="description"> Contact Me</h2>
           <form
             action="https://formspree.io/f/myzeyjea"
             method="POST"

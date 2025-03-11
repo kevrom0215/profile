@@ -36,16 +36,16 @@
     background-color: #3b82f6;
   } /* Blue */
   25% {
-    background-color: #22c55e;
+    background-color: #7ec522;
   } /* Green */
   50% {
-    background-color: #ef4444;
+    background-color: #ef9f44;
   } /* Red */
   75% {
     background-color: #facc15;
   } /* Yellow */
   100% {
-    background-color: #3b82f6;
+    background-color: #f63bed;
   } /* Back to Blue */
 }
 

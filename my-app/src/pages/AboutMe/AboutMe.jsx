@@ -329,7 +329,6 @@ const AboutMe = () => {
             <p>AWS Certified Cloud Practitioner</p>
             <p>Issued on Feb 2025 - Expires 2028</p>
           </div>
-          <h2 className="description"> Contact Me</h2>
         </div>
 
         <ContactForm></ContactForm>
