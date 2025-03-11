@@ -28,9 +28,7 @@ const Navbar = () => {
             <path d={githubIcon} />
           </svg>
           </li>
-          <li className="navbar-item">
-            <Link to="/about-me" className="navbar-link">About Me</Link>
-          </li>
+          
           {/* <li className="navbar-item">
             <Link to="/contact-me" className="navbar-link">Contact Me</Link>
           </li> */}
