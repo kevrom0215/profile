@@ -22,10 +22,6 @@ const AppContent = () => {
       <div className="app-wrapper">
         <Routes>
           <Route path="/" element={<AboutMe />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/contact-me" element={<ContactMe />} />
-
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

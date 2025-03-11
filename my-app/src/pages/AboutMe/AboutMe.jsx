@@ -1,9 +1,10 @@
-import {React,useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import kenneth from "../../assets/me.jpg";
-import car from "../../assets/car.jpeg"
-import hills from "../../assets/hills.jpeg"
+import car from "../../assets/car.jpeg";
+import hills from "../../assets/hills.jpeg";
 import "./AboutMe.css";
 import pikachu from "../../assets/pikachu.gif";
+import ContactForm from "../ContactForm/ContactForm";
 
 const AboutMe = () => {
   const createConfetti = (numberOfPieces) => {
@@ -29,9 +30,7 @@ const AboutMe = () => {
     });
   };
   const [index, setIndex] = useState(0);
-  const images = [
-    kenneth,car,hills
-  ];
+  const images = [kenneth, car, hills];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -40,7 +39,6 @@ const AboutMe = () => {
 
     return () => clearInterval(interval); // Cleanup function
   }, []);
-  
 
   const nextSlide = () => {
     setIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -331,7 +329,10 @@ const AboutMe = () => {
             <p>AWS Certified Cloud Practitioner</p>
             <p>Issued on Feb 2025 - Expires 2028</p>
           </div>
+          <h2 className="description"> Contact Me</h2>
         </div>
+
+        <ContactForm></ContactForm>
       </div>
     </div>
   );

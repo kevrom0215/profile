@@ -1,0 +1,65 @@
+.gridly {
+  background-color: aliceblue;
+  display: grid;
+  padding: 2rem;
+  margin: 10px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.inputArea {
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.sendButton {
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form {
+  align-self: center;
+  margin: auto;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #3b82f6;
+  } /* Blue */
+  25% {
+    background-color: #22c55e;
+  } /* Green */
+  50% {
+    background-color: #ef4444;
+  } /* Red */
+  75% {
+    background-color: #facc15;
+  } /* Yellow */
+  100% {
+    background-color: #3b82f6;
+  } /* Back to Blue */
+}
+
+.color-cycle {
+  animation: colorChange 5s infinite;
+}
+
+@media (max-width: 1000px) {
+  .gridly {
+    background-color: aliceblue;
+    display: grid;
+    padding: 2rem;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+  }
+}

@@ -37,12 +37,13 @@
   background-color:aliceblue;
 }
 .slide {
-  margin-bottom: 50px;
-  width: 85%;
+  margin-bottom: 55px;
+  margin-top: 20px;
+  width: 90%;
   max-width: 300px;
   min-height: 400px;
   height: 400px;
-  object-fit: contain;
+  object-fit: cover;
   transition: opacity 0.5s ease-in-out;
 }
 .prev, .next {
@@ -245,3 +246,4 @@
   font-size: 0.8em; /* Adjusts the size of the text */
   margin: 5px; /* Adjusts the space outside the list item */
 }
+
