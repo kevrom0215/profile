@@ -18,7 +18,7 @@
 .sendButton {
   border-radius: 10px;
   border: none;
-  color: white;
+  background-color: #2D8685;
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px;
@@ -31,23 +31,23 @@
   margin: auto;
 }
 
-@keyframes colorChange {
+/* @keyframes colorChange {
   0% {
     background-color: #3b82f6;
-  } /* Blue */
+  } 
   25% {
     background-color: #7ec522;
-  } /* Green */
+  } 
   50% {
     background-color: #ef9f44;
-  } /* Red */
+  } 
   75% {
     background-color: #facc15;
-  } /* Yellow */
+  } 
   100% {
     background-color: #f63bed;
-  } /* Back to Blue */
-}
+  } 
+} */
 
 .color-cycle {
   animation: colorChange 5s infinite;

@@ -5,6 +5,7 @@ import hills from "../../assets/hills.jpeg";
 import "./AboutMe.css";
 import pikachu from "../../assets/pikachu.gif";
 import ContactForm from "../ContactForm/ContactForm";
+import colors from "../../assets/colors";
 
 const AboutMe = () => {
   const createConfetti = (numberOfPieces) => {

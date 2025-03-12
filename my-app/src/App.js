@@ -9,16 +9,15 @@ import {
   HashRouter,
 } from "react-router-dom"; // Ensure these imports
 import NotFound from "./components/NotFound/NotFound";
-import Navbar from "./components/NavBar/NavBar";
 import AboutMe from "./pages/AboutMe/AboutMe";
-import ContactMe from "./pages/ContactMe/ContactMe";
-import Footer from "./components/Footer/Footer";
+import colors from "./assets/colors";
+import Navbar from "./components/NavBar/NavBar"
 
 const AppContent = () => {
   const navigate = useNavigate();
   return (
     <>
-      {/* <div>{<Navbar />}</div> */}
+      <div>{<Navbar />}</div>
       <div className="app-wrapper">
         <Routes>
           <Route path="/" element={<AboutMe />} />

@@ -10,11 +10,6 @@ html, body {
   padding: 0;
 }
 
-html{
-  /* background-image: url('./assets/background.jpg'); */
-  background-color: rgb(245, 245, 245);
-}
-
 .app-wrapper{
   justify-content: center;
   display: block;
