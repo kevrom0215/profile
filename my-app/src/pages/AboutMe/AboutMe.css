@@ -285,8 +285,8 @@
 }
 @media screen and (max-width: 768px) {
   .intro {
-    max-width: 400px !important; 
-    margin: 1.5rem;
+    max-width: 300px !important; 
+    margin: 2rem;
     padding: 2rem;
     border-radius: 10px;
   }

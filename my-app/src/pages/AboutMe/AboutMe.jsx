@@ -332,7 +332,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="grid-container contact-form">
-        <div className="intro">
+        <div className="intro grid-item">
           <h2 className="description">Let’s take your ideas together.</h2>
           <p>Got something in mind?</p>
           <p>
