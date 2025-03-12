@@ -34,7 +34,7 @@
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color:aliceblue;
+  background-color: aliceblue;
 }
 .slide {
   margin-bottom: 55px;
@@ -46,7 +46,8 @@
   object-fit: cover;
   transition: opacity 0.5s ease-in-out;
 }
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -63,7 +64,8 @@
 .next {
   right: 10px;
 }
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -94,7 +96,7 @@
     padding: 5px !important;
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .confetti-container{
+  .confetti-container {
     visibility: hidden;
   }
 }
@@ -247,3 +249,45 @@
   margin: 5px; /* Adjusts the space outside the list item */
 }
 
+.contact-form {
+  background-image: url("../../assets/background.jpg");
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  overflow: hidden;
+}
+
+.intro {
+  width: 500px;
+  margin: auto;
+  padding: 2rem;
+  word-wrap: break-word;  /* Helps break long words */
+  overflow-wrap: break-word; /* Ensures words break across lines if too long */
+  white-space: normal; 
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.intro p{
+  text-align: left;
+  padding: 10px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal; 
+}
+.intro h2{
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 400px !important; 
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+}

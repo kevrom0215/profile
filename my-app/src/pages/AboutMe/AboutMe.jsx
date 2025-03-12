@@ -330,7 +330,16 @@ const AboutMe = () => {
             <p>Issued on Feb 2025 - Expires 2028</p>
           </div>
         </div>
-
+      </div>
+      <div className="grid-container contact-form">
+        <div className="intro">
+          <h2 className="description">Let’s take your ideas together.</h2>
+          <p>Got something in mind?</p>
+          <p>
+            Share your thoughts with me, and I’ll make sure to get back to you
+            promptly.
+          </p>
+        </div>
         <ContactForm></ContactForm>
       </div>
     </div>

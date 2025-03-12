@@ -9,7 +9,6 @@ export default function ContactForm() {
           <form
             action="https://formspree.io/f/myzeyjea"
             method="POST"
-            className=""
           >
             <div>
               <label className="flex mb-4">
