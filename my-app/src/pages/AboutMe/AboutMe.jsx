@@ -223,7 +223,7 @@ const AboutMe = () => {
             <div className="grid">
               {skills.map((skill) => (
                 <div key={skill.name} className="skill-container">
-                  {/* <div>{skill.name}</div> */}
+                  <span className="tooltiptext">{skill.name}</span>
                   <div>
                     <img
                       src={skill.imageUrl}
