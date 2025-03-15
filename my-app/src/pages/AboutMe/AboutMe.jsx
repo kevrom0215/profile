@@ -8,28 +8,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import colors from "../../assets/colors";
 
 const AboutMe = () => {
-  const createConfetti = (numberOfPieces) => {
-    return [...Array(numberOfPieces)].map((_, index) => {
-      const swayValue = (Math.random() - 0.5) * 2; // Random sway value between -1 and 1
-      return (
-        <div
-          key={index}
-          className="confetti"
-          style={{
-            left: `${Math.random() * 100}%`,
-            animationDuration: `${Math.random() * 2 + 3}s`, // Random duration between 3s and 5s
-            "--sway": swayValue,
-          }}
-        >
-          <img
-            src={pikachu}
-            alt="Pikachu"
-            style={{ objectFit: "contain", height: "20px", width: "20px" }}
-          />
-        </div>
-      );
-    });
-  };
+  
   const [index, setIndex] = useState(0);
   const images = [kenneth, car, hills];
 
@@ -102,9 +81,6 @@ const AboutMe = () => {
               When I’m not diving deep into code, you’ll find me immersed in a
               variety of hobbies that fuel my passion and joy.
             </p>
-            <div className="confetti-container">
-              {createConfetti(12)} {/* Create 30 pieces of confetti */}
-            </div>
             <div className="social-media-grid">
               <div className="svg-container">
                 <a

@@ -17,7 +17,7 @@ const AppContent = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div>{<Navbar />}</div>
+      {/* <div>{<Navbar />}</div> */}
       <div className="app-wrapper">
         <Routes>
           <Route path="/" element={<AboutMe />} />
