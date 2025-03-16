@@ -74,7 +74,7 @@ const AboutMe = () => {
             <h2 className="description">Experience</h2>
           </div>
           <div className="grid-item">
-            <p>
+            <p className="description">
               I have been working as a full-stack developer for about three
               years and continuously seek to expand my expertise in new
               technologies.
@@ -196,7 +196,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="grid-container contact-form">
-        <div className="intro grid-item">
+        <div className="intro">
           <h2 className="description">Let’s take your ideas together.</h2>
           <p>Got something in mind?</p>
           <p>
