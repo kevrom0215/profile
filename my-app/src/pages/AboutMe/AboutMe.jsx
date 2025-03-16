@@ -38,10 +38,10 @@ const AboutMe = () => {
             <p className="description">A Software Engineer.</p>
             <p className="description">
               I specialize in full-stack development and cloud data engineering,
-              working with Java, Angular, and AWS. My passion for
-              coding started in high school with game development in Visual
-              Basic, and I’ve been honing my skills ever since. Outside of work,
-              I enjoy hobbies that fuel my creativity and curiosity.
+              working with Java, Angular, and AWS. My passion for coding started
+              in high school with game development in Visual Basic, and I’ve
+              been honing my skills ever since. Outside of work, I enjoy hobbies
+              that fuel my creativity and curiosity.
             </p>
           </div>
           <div className="grid-item" style={{ textAlign: "center" }}>
@@ -108,38 +108,33 @@ const AboutMe = () => {
           <div className="grid-item">
             <ul>
               <li className="pikachu">
-                Refactored legacy codebases for improved maintainability,
-                facilitating easier future updates.
+                Refactored legacy codebases for better maintainability and
+                future updates.
               </li>
               <li className="pikachu">
-                Conducted comprehensive code reviews to enhance code quality
-                across team projects.
+                Led code reviews to improve team-wide code quality.
               </li>
               <li className="pikachu">
-                Provided mentorship and technical guidance to junior developers,
-                fostering a collaborative team environment.
+                Mentored junior developers, fostering collaboration.
               </li>
               <li className="pikachu">
-                Deployed a WordPress Lightsail instance with a CDN, load
-                balancer, an installed RDS database, and a custom domain using
-                GoDaddy, ensuring scalability and optimized performance.
+                Deployed a scalable WordPress Lightsail instance with CDN, load
+                balancer, RDS, and custom domain.
               </li>
               <li className="pikachu">
-                Enabled SNS notifications on the Lightsail webpage to manage and
-                respond to company inquiries efficiently.
+                Integrated SNS notifications for efficient inquiry management.
               </li>
               <li className="pikachu">
-                Developed and maintained unit tests using Jasmine, ensuring code
-                stability and early detection of issues.
+                Maintained unit tests with Jasmine for stability and early issue
+                detection.
               </li>
               <li className="pikachu">
-                Estimated cloud costs for the Lightsail website, optimizing
-                resource usage and balancing performance with budget
-                considerations.
+                Optimized Lightsail cloud costs, balancing performance and
+                budget.
               </li>
               <li className="pikachu">
-                Merged two existing apps into a unified solution, streamlining
-                functionality and improving user experience.
+                Unified two apps into a single solution, enhancing functionality
+                and UX.
               </li>
             </ul>
           </div>
