@@ -3,10 +3,8 @@ import kenneth from "../../assets/me.jpg";
 import car from "../../assets/car.jpeg";
 import hills from "../../assets/hills.jpeg";
 import "./AboutMe.css";
-import pikachu from "../../assets/pikachu.gif";
 import ContactForm from "../ContactForm/ContactForm";
 import skills from "../../assets/skills.json";
-import colors from "../../assets/colors";
 import point from "../../assets/point.png";
 
 const AboutMe = () => {
@@ -80,6 +78,9 @@ const AboutMe = () => {
               I have been working as a full-stack developer for about three
               years and continuously seek to expand my expertise in new
               technologies.
+            </p>
+            <p className="description">
+              Some technologies I have worked with:
             </p>
           </div>
           <div className="grid-item">
