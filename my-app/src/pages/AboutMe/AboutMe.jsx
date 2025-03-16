@@ -37,23 +37,11 @@ const AboutMe = () => {
             </div>
             <p className="description">A Software Engineer.</p>
             <p className="description">
-              I specialize in full-stack development and cloud data engineering
-              at Pointwest, working with Java, Angular, and AWS technologies.
-            </p>
-            <p className="description">
-              My passion for software engineering began in high school, where I
-              was introduced to game development using Visual Basic. This early
-              exposure sparked my interest in coding, which I have continued to
-              develop throughout my career.
-            </p>
-            <p className="description">
-              I had the opportunity to begin my professional journey at
-              Pointwest, where I refined my skills and deepened my expertise in
-              software engineering.
-            </p>
-            <p className="description">
-              When I’m not coding, I enjoy engaging in hobbies that fuel my
-              creativity and curiosity.
+              I specialize in full-stack development and cloud data engineering,
+              working with Java, Angular, and AWS. My passion for
+              coding started in high school with game development in Visual
+              Basic, and I’ve been honing my skills ever since. Outside of work,
+              I enjoy hobbies that fuel my creativity and curiosity.
             </p>
           </div>
           <div className="grid-item" style={{ textAlign: "center" }}>
@@ -79,9 +67,7 @@ const AboutMe = () => {
               years and continuously seek to expand my expertise in new
               technologies.
             </p>
-            <p className="description">
-              Some technologies I have worked with:
-            </p>
+            <p className="description">Some technologies I have worked with:</p>
           </div>
           <div className="grid-item">
             <br></br>
