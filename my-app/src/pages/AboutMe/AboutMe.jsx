@@ -176,16 +176,18 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="grid-container contact-form">
-        <div className="intro">
-          <h2 className="description">Let’s take your ideas together.</h2>
-          <p>Got something in mind?</p>
-          <p>
-            Share your thoughts with me, and I’ll make sure to get back to you
-            promptly.
-          </p>
+      <div className="contact-form">
+        <div className="formy">
+          <div className="intro">
+            <h2 className="description">Let’s take your ideas together.</h2>
+            <p>Got something in mind?</p>
+            <p>
+              Share your thoughts with me, and I’ll make sure to get back to you
+              promptly.
+            </p>
+          </div>
+          <ContactForm></ContactForm>
         </div>
-        <ContactForm></ContactForm>
       </div>
     </div>
   );
