@@ -1,27 +1,49 @@
 .gridly {
-  background-color: aliceblue;
   display: grid;
   padding: 2rem;
   margin: 10px;
   width: 500px;
   border-radius: 10px;
 }
+.inputEmail{
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 20px;
+  height: 50px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent background */
+  border: 2px solid black;
+  color: whitesmoke;
+  outline: none;
+  letter-spacing: 1px;
+}
 
 .inputArea {
   border-radius: 10px;
   width: 100%;
-  padding: 12px 20px;
+  padding: 15px 20px;
+  height: 100px;
   margin: 8px 0;
   box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent background */
+  border: 2px solid black;
+  color: white; /* Ensures text is white */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  outline: none;
 }
+
 
 .sendButton {
   border-radius: 10px;
   border: none;
-  background-color: #2D8685;
-  padding: 16px 32px;
+  background-color: #4E8D9F;
+  padding: 12px 20px;
   text-decoration: none;
-  margin: 4px 2px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  margin: 8px 0;
   cursor: pointer;
   width: 100%;
 }
@@ -31,31 +53,9 @@
   margin: auto;
 }
 
-/* @keyframes colorChange {
-  0% {
-    background-color: #3b82f6;
-  } 
-  25% {
-    background-color: #7ec522;
-  } 
-  50% {
-    background-color: #ef9f44;
-  } 
-  75% {
-    background-color: #facc15;
-  } 
-  100% {
-    background-color: #f63bed;
-  } 
-} */
-
-.color-cycle {
-  animation: colorChange 5s infinite;
-}
 
 @media (max-width: 1200px) {
   .gridly {
-    background-color: aliceblue;
     display: grid;
     padding: 2rem;
     margin: 10px;

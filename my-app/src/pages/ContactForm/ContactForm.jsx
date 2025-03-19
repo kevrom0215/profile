@@ -4,7 +4,6 @@ export default function ContactForm() {
   return (
     <div className="form">
       <div className="gridly">
-
       <h2 className="description"> Contact Me</h2>
           <form
             action="https://formspree.io/f/myzeyjea"
@@ -18,7 +17,7 @@ export default function ContactForm() {
                 <input
                   type="email"
                   name="email"
-                  className="inputArea"
+                  className="inputEmail"
                   required
                 />
               </label>
@@ -39,7 +38,7 @@ export default function ContactForm() {
               type="submit"
               className="sendButton color-cycle"
             >
-              Send
+              Submit
             </button>
           </form>
         

@@ -11,21 +11,17 @@ import {
 import NotFound from "./components/NotFound/NotFound";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import colors from "./assets/colors";
-import Navbar from "./components/NavBar/NavBar"
+import Navbar from "./components/NavBar/NavBar";
 
 const AppContent = () => {
   const navigate = useNavigate();
   return (
-    <>
-      {/* <div>{<Navbar />}</div> */}
-      <div className="app-wrapper">
-        <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-      {/* <div>{<Footer />}</div> */}
-    </>
+    <div className="app-wrapper">
+      <Routes>
+        <Route path="/" element={<AboutMe />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </div>
   );
 };
 

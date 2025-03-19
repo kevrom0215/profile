@@ -2,15 +2,22 @@
   text-align: center;
   justify-content: center;
 }
-
-html, body {
-  height: 100%;
+html,
+body {
+  background-image: linear-gradient(#E0E2E3,#ABADB0,#232428 );
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Allows background to scroll with content */
+  background-size: 100% 100%; /* Ensures full coverage without distortion */
+  min-height: 100vh; /* Ensures it covers the full viewport */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#263440;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.app-wrapper{
+
+.app-wrapper {
   justify-content: center;
   display: block;
   width: 100%;
@@ -18,4 +25,3 @@ html, body {
   margin-bottom: 0;
   font-size: 20px;
 }
-

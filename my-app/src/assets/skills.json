@@ -21,11 +21,11 @@
     },
     {
       "name": "Gitlab",
-      "imageUrl": "https://yt3.googleusercontent.com/Zfx2OSI5XWKhnove-HwdTokQUmCB7cfpX0uGbqxMeQVNMzVPrvgMadFHpbfYoy04NrjFEBk_3A=s900-c-k-c0x00ffffff-no-rj"
+      "imageUrl": "https://cdn.worldvectorlogo.com/logos/gitlab.svg"
     },
     {
       "name": "HTML",
-      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
     },
     {
       "name": "Java",
@@ -62,6 +62,18 @@
     {
       "name": "Jira",
       "imageUrl": "https://play-lh.googleusercontent.com/_AZCbg39DTuk8k3DiPRASr9EwyW058pOfzvAu1DsfN9ygtbOlbuucmXaHJi5ooYbokQX"
+    },
+    {
+      "name": "DynamoDB",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png"
+    },
+    {
+      "name": "Figma",
+      "imageUrl": "https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png"
+    },
+    {
+      "name": "CloudFormation",
+      "imageUrl": "https://cdn.prod.website-files.com/5f10ed4c0ebf7221fb5661a5/5f2f4d4e1f97d2de705d96e3_Aws_cloudformation.png"
     }
   ]
   
