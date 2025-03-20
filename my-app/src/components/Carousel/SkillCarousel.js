@@ -13,8 +13,11 @@ const SkillCarousel = ({ skills = [] }) => {
       spaceBetween={20}
       slidesPerView={10}
       breakpoints={{
-        640: { slidesPerView: 10 },
-        1024: { slidesPerView: 10 },
+        320: { slidesPerView: 2 },  // Show 2 slides on very small screens
+        480: { slidesPerView: 3 },  // Show 3 slides on small screens
+        640: { slidesPerView: 4 },  // Show 4 slides on medium screens
+        768: { slidesPerView: 6 },  // Show 6 slides on tablets
+        1024: { slidesPerView: 10 }, // Show 10 slides on large screens
       }}
       loop={true} // ✅ Enable infinite scrolling
       autoplay={{
