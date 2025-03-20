@@ -6,6 +6,7 @@ import "./AboutMe.css";
 import ContactForm from "../ContactForm/ContactForm";
 import skills from "../../assets/skills.json";
 import point from "../../assets/point.png";
+import SkillCarousel from "../../components/Carousel/SkillCarousel";
 
 const AboutMe = () => {
   const [index, setIndex] = useState(0);
@@ -61,20 +62,8 @@ const AboutMe = () => {
             <p className="description">Some technologies I have worked with:</p>
           </div>
           <div className="grid-item">
-            <br></br>
-            <div className="grid">
-              {skills.map((skill) => (
-                <div key={skill.name} className="skill-container">
-                  <span className="tooltiptext">{skill.name}</span>
-                  <div>
-                    <img
-                      src={skill.imageUrl}
-                      alt={`${skill.name} logo`}
-                      className="skill-image"
-                    />
-                  </div>
-                </div>
-              ))}
+            <div className="grid-carousel">
+              <SkillCarousel skills={skills}/>
             </div>
           </div>
         </div>
@@ -154,7 +143,7 @@ const AboutMe = () => {
           </div>
           <div></div>
           <div className="grid-item logo">
-            <img
+            <img alt="logo"
               src={
                 "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
               }

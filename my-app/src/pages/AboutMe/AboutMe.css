@@ -86,6 +86,13 @@
   margin: auto;
 }
 
+.grid-carousel{
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+}
+
 /* Skill container for each skill */
 .skill-container {
   justify-items: center;
@@ -165,7 +172,6 @@
 }
 
 .contact-form {
-
   color: #E0E2E3;
   padding-top: 3rem;
   padding-bottom: 3rem;
