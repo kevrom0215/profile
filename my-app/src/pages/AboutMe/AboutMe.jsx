@@ -49,13 +49,13 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <div className="grid-container skills">
+        <div className="grid-container skills ">
           <div className="section">
-            <h2 className="label">Experience</h2>
+            <h3 className="label">Experience</h3>
           </div>
           <div className="grid-item">
             <p className="description">
-              I have been working as a full-stack developer for about three
+              I have been working as a full-stack developer for three
               years and continuously seek to expand my expertise in new
               technologies.
             </p>
@@ -67,61 +67,29 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="grid-container">
+        <div className="grid-container work">
           <div className="section">
-            <h2 className="description">Where I've worked</h2>
+            <h3 className="description">Where I've worked</h3>
           </div>
           <div></div>
           <div className="grid-item employer">
             <div className="logo">
-              <img
-                src={"https://pointwest.com/wp-content/uploads/2024/06/Pointwest-logo-footer.svg-2.png"}
-                alt="Pointwest Logo"
-                style={{
-                  height: 70,
-                  margin: 10,
-                  padding: 10,
-                }}
-              />
+              <div>
+                
+             <h3>Full Stack Developer, Pointwest</h3>
+              </div>
+             <div>
+                <span style={{fontSize:"12px"}}>2021 - PRESENT</span>
+             </div>
             </div>
           </div>
           <div className="grid-item">
-            <ul>
-              <li className="pikachu">
-                Refactored legacy codebases for better maintainability and
-                future updates.
-              </li>
-              <li className="pikachu">
-                Led code reviews to improve team-wide code quality.
-              </li>
-              <li className="pikachu">
-                Mentored junior developers, fostering collaboration.
-              </li>
-              <li className="pikachu">
-                Deployed a scalable WordPress Lightsail instance with CDN, load
-                balancer, RDS, and custom domain.
-              </li>
-              <li className="pikachu">
-                Integrated SNS notifications for efficient inquiry management.
-              </li>
-              <li className="pikachu">
-                Maintained unit tests with Jasmine for stability and early issue
-                detection.
-              </li>
-              <li className="pikachu">
-                Optimized Lightsail cloud costs, balancing performance and
-                budget.
-              </li>
-              <li className="pikachu">
-                Unified two apps into a single solution, enhancing functionality
-                and UX.
-              </li>
-            </ul>
+            <p className="description">I improved legacy code maintainability, led code reviews, and mentored junior developers. I deployed a scalable WordPress Lightsail instance with a CDN, load balancer, RDS, and a custom domain, integrating SNS for efficient inquiry management. I maintained Jasmine unit tests for stability, optimized Lightsail costs, and unified two apps to enhance functionality and UX.</p>
           </div>
         </div>
-        <div className="grid-container">
+        <div className="grid-container work">
           <div className="section">
-            <h2 className="description">Education</h2>
+            <h3 className="description">Education</h3>
           </div>
           <div></div>
           <div className="grid-item logo">
@@ -137,9 +105,9 @@ const AboutMe = () => {
             <p>BS Mechanical Engineering Minor in Mechatronics Engineering</p>
           </div>
         </div>
-        <div className="grid-container">
+        <div className="grid-container work">
           <div className="section">
-            <h2 className="description">Certification</h2>
+            <h3 className="description">Certification</h3>
           </div>
           <div></div>
           <div className="grid-item logo">
@@ -159,7 +127,7 @@ const AboutMe = () => {
       <div className="contact-form">
         <div className="formy">
           <div className="intro">
-            <h2 className="description">Let’s take your ideas together.</h2>
+            <h3 className="description">Let’s take your ideas together.</h3>
             <p>Got something in mind?</p>
             <p>
               Share your thoughts with me, and I’ll make sure to get back to you

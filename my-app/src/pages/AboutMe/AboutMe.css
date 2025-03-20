@@ -9,6 +9,10 @@
   width: 80%;
 }
 
+.about-me{
+  height: 800px;
+}
+
 
 /* Styling for each grid item */
 .grid-item {
@@ -43,8 +47,8 @@
 }
 
 .description {
-  text-align: left !important;
-  line-height: 1.6;
+  text-align: justify !important;
+  line-height: 1.5;
 }
 
 /* Footer.css */
@@ -160,15 +164,6 @@
   100% {
     transform: translate(400px);
   }
-}
-
-.pikachu {
-  /* list-style: none; */
-  /* background: url("../../assets/pikachu.gif") no-repeat left center; 
-  background-size: 20px 20px;  */
-  padding-left: 25px; /* Adjust for the background image size */
-  font-size: 1em; /* Adjusts the size of the text */
-  margin: 5px; /* Adjusts the space outside the list item */
 }
 
 .contact-form {
@@ -292,9 +287,15 @@
   }
 }
 
+
 .grid-container.skills {
   display: flex;
   flex-direction: column;
+  height: 500px;
+}
+
+.grid-container.work{
+  height: 500px;
 }
 
 
@@ -328,9 +329,11 @@
   }
   .logo {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
+    
   }
   .social-media-grid {
     display: grid !important;
@@ -366,8 +369,8 @@
 
 .logo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
 }
-
