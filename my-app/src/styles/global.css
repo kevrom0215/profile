@@ -8,14 +8,3 @@
     width: 100%;
     min-height: 100vh;
 }
-
-.blank{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding-bottom: 2rem;
-    height: 100vh;
-    width: 100%;
-}

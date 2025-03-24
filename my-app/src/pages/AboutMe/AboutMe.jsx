@@ -7,6 +7,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import skills from "../../assets/skills.json";
 import point from "../../assets/point.png";
 import SkillCarousel from "../../components/Carousel/SkillCarousel";
+import ContactMe from "../ContactMe/ContactMe";
 
 const AboutMe = () => {
   const [index, setIndex] = useState(0);
@@ -39,7 +40,7 @@ const AboutMe = () => {
             <p className="description">A Software Engineer.</p>
             <p className="description">
               I specialize in full-stack development and cloud data engineering,
-              working with Java, Angular, and AWS. 
+              working with Java, Angular, and AWS.
             </p>
           </div>
           <div className="grid-item" style={{ textAlign: "center" }}>
@@ -55,15 +56,14 @@ const AboutMe = () => {
           </div>
           <div className="grid-item">
             <p className="description">
-              I have been working as a full-stack developer for three
-              years and continuously seek to expand my expertise in new
-              technologies.
+              I have been working as a full-stack developer for three years and
+              continuously seek to expand my expertise in new technologies.
             </p>
             <p className="description">Some technologies I have worked with:</p>
           </div>
           <div className="grid-item">
             <div className="grid-carousel">
-              <SkillCarousel skills={skills}/>
+              <SkillCarousel skills={skills} />
             </div>
           </div>
         </div>
@@ -75,16 +75,19 @@ const AboutMe = () => {
           <div className="grid-item employer">
             <div className="logo">
               <div>
-                
-             <h3>Full Stack Developer, Pointwest</h3>
+                <h3>Full Stack Developer, Pointwest</h3>
               </div>
-             <div>
-                <span style={{fontSize:"12px"}}>2021 - PRESENT</span>
-             </div>
             </div>
           </div>
           <div className="grid-item">
-            <p className="description">I improved legacy code maintainability, led code reviews, and mentored junior developers. I deployed a scalable WordPress Lightsail instance with a CDN, load balancer, RDS, and a custom domain, integrating SNS for efficient inquiry management. I maintained Jasmine unit tests for stability, optimized Lightsail costs, and unified two apps to enhance functionality and UX.</p>
+            <p className="description">
+              I improved legacy code maintainability, led code reviews, and
+              mentored junior developers. I deployed a scalable WordPress
+              Lightsail instance with a CDN, load balancer, RDS, and a custom
+              domain, integrating SNS for efficient inquiry management. I
+              maintained Jasmine unit tests for stability, optimized Lightsail
+              costs, and unified two apps to enhance functionality and UX.
+            </p>
           </div>
         </div>
         <div className="grid-container work">
@@ -111,7 +114,8 @@ const AboutMe = () => {
           </div>
           <div></div>
           <div className="grid-item logo">
-            <img alt="logo"
+            <img
+              alt="logo"
               src={
                 "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
               }
@@ -125,15 +129,16 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="contact-form">
+        <div className="contact-desc">
+          <h3>Let’s take your ideas together.</h3>
+          <p>
+            Got something in mind? Share your thoughts with me, and I’ll make sure to get back to you
+            promptly.
+          </p>
+        </div>
+
         <div className="formy">
-          <div className="intro">
-            <h3 className="description">Let’s take your ideas together.</h3>
-            <p>Got something in mind?</p>
-            <p>
-              Share your thoughts with me, and I’ll make sure to get back to you
-              promptly.
-            </p>
-          </div>
+          <ContactMe></ContactMe>
           <ContactForm></ContactForm>
         </div>
       </div>

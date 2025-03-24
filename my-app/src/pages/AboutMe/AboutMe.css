@@ -47,8 +47,10 @@
 }
 
 .description {
-  text-align: justify !important;
   line-height: 1.5;
+  margin: auto;
+  padding: auto;
+  text-align: left;
 }
 
 /* Footer.css */
@@ -167,7 +169,6 @@
 }
 
 .contact-form {
-  color: #E0E2E3;
   padding-top: 3rem;
   padding-bottom: 3rem;
   width: 100%;
@@ -177,6 +178,14 @@
   align-content: center;
   overflow: hidden;
   min-height: 800px;
+}
+
+.contact-desc{
+  text-align: center;
+}
+
+.contact-desc p{
+  font-size: 12px;
 }
 
 .intro {
@@ -253,6 +262,7 @@
 }
 .about {
   width: max-content;
+  height: 70px;
   /* grid-template-columns: auto;Aligns content to the start (left) */
 }
 

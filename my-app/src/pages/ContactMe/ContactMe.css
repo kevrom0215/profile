@@ -1,0 +1,61 @@
+.email-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.icon-wrapper {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #2a3b84; /* Blue circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper i {
+  font-size: 20px;
+  color: white;
+}
+
+.email-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.email-address {
+  font-size: 14px;
+  color: rgb(68, 64, 64); /* Slightly lighter gray for contrast */
+}
+
+.social-grid {
+  display: flex;
+}
+
+.icon-brand {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.connect-label{
+    padding: auto;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color from parent */
+}

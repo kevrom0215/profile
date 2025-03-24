@@ -4,7 +4,7 @@
 }
 html,
 body {
-  background-image: linear-gradient(#E0E2E3,#ABADB0,#232428 );
+  background-image: linear-gradient(#E0E2E3,#ABADB0 );
   background-repeat: no-repeat;
   background-attachment: scroll; /* Allows background to scroll with content */
   background-size: 100% 100%; /* Ensures full coverage without distortion */
