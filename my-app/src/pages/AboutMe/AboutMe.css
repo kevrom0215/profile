@@ -47,7 +47,6 @@
 }
 
 .description {
-  height: 70px;
   line-height: 1.5;
   margin: auto;
   padding: auto;
@@ -234,6 +233,9 @@
   .intro h2{
     padding: 0px;
     margin: 0px;
+  }
+  .grid-container.skills{
+    height: auto !important;
   }
 }
 

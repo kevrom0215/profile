@@ -79,8 +79,8 @@ const AboutMe = () => {
             <p className="description">
               I have been working as a full-stack developer for three years and
               continuously seek to expand my expertise in new technologies.
+              Some technologies I have worked with
             </p>
-            <p className="description">Some technologies I have worked with:</p>
           </div>
           <div className="grid-item">
             <div className="grid-carousel">
