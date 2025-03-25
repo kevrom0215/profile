@@ -8,6 +8,7 @@ import skills from "../../assets/skills.json";
 import point from "../../assets/point.png";
 import SkillCarousel from "../../components/Carousel/SkillCarousel";
 import ContactMe from "../ContactMe/ContactMe";
+import Resume from "../../assets/Kenneth_Resume.pdf"
 
 const AboutMe = () => {
   const [index, setIndex] = useState(0);
@@ -49,6 +50,26 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
+        <div className="grid-container skills">
+          <p className="justify">
+            Full Stack Developer with 3 years of experience specializing in
+            school management systems, including curriculum development, order
+            processing, events, user, and student management. Proficient in
+            Java, Angular, and AWS, with expertise in backend and frontend
+            development across the full software lifecycle. <br></br><br></br>Currently, I work at
+            Pointwest, where I develop user-facing applications as a full stack
+            Java developer. I focus on building accessible, high-performing, and
+            visually appealing web experiences while ensuring seamless
+            functionality across the stack. <br></br><br></br>When I'm not coding, you'll find me
+            exploring the world of cars, building Gundam models, or spending
+            time with my dog. I'm always eager to learn and improve, whether
+            it's deepening my cloud and software architecture knowledge or
+            refining my development skills.
+          </p>
+          <div className="center resume">
+            <a href={Resume} download="Kenneth_Resume.pdf">Download Resume&nbsp; <i class="fa fa-download" aria-hidden="true"></i></a>
+          </div>
+        </div>
 
         <div className="grid-container skills ">
           <div className="section">
@@ -67,7 +88,8 @@ const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className="grid-container work">
+        
+        {/* <div className="grid-container work">
           <div className="section">
             <h3 className="description">Where I've worked</h3>
           </div>
@@ -89,8 +111,8 @@ const AboutMe = () => {
               costs, and unified two apps to enhance functionality and UX.
             </p>
           </div>
-        </div>
-        <div className="grid-container work">
+        </div> */}
+        {/* <div className="grid-container work">
           <div className="section">
             <h3 className="description">Education</h3>
           </div>
@@ -107,7 +129,7 @@ const AboutMe = () => {
             <p>De La Salle University Manila</p>
             <p>BS Mechanical Engineering Minor in Mechatronics Engineering</p>
           </div>
-        </div>
+        </div> */}
         <div className="grid-container work">
           <div className="section">
             <h3 className="description">Certification</h3>
@@ -132,8 +154,8 @@ const AboutMe = () => {
         <div className="contact-desc">
           <h3>Let’s take your ideas together.</h3>
           <p>
-            Got something in mind? Share your thoughts with me, and I’ll make sure to get back to you
-            promptly.
+            Got something in mind? Share your thoughts with me, and I’ll make
+            sure to get back to you promptly.
           </p>
         </div>
 

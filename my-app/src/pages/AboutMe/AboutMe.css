@@ -297,11 +297,23 @@
   }
 }
 
+.center {
+  text-align: center;
+}
+.resume{
+  margin-top: 1rem;
+}
+.justify{
+  text-align: justify;
+}
 
 .grid-container.skills {
   display: flex;
   flex-direction: column;
   height: 500px;
+  justify-content: center;
+  font-weight: 300;
+  text-align: justify;
 }
 
 .grid-container.work{
