@@ -264,7 +264,7 @@
   bottom: 100%; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 .about {
-  width: max-content;
+  width: auto;
   height: 70px;
   /* grid-template-columns: auto;Aligns content to the start (left) */
 }
@@ -385,7 +385,6 @@
     overflow: hidden;
   }
   .about-me{
-    height: 1000px;
     gap: 0px 0px; /* 10px row gap, 20px column gap */
   }
   .skills{

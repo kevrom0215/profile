@@ -38,7 +38,7 @@ const AboutMe = () => {
             <div className="about">
               <h2>Hi, I am Kenneth </h2>
             </div>
-            <p className="description">A Software Engineer.</p>
+            <p className="description about">A Software Engineer.</p>
             <p className="description">
               I specialize in full-stack development and cloud data engineering,
               working with Java, Angular, and AWS.
