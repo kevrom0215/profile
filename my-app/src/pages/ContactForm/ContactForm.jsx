@@ -12,7 +12,7 @@ export default function ContactForm() {
             <div>
               <label className="flex mb-4">
                 <div>
-                  <span className="text-gray-600">Email:</span>
+                  <span className="text-gray-300 text-xs">Email:</span>
                 </div>
                 <input
                   type="email"
@@ -25,7 +25,7 @@ export default function ContactForm() {
             <div>
               <label className="block mb-4">
                 <div>
-                  <span className="text-gray-600">Message:</span>
+                  <span className="text-gray-200 text-xs">Message:</span>
                 </div>
                 <textarea
                   name="message"
@@ -38,7 +38,7 @@ export default function ContactForm() {
               type="submit"
               className="sendButton color-cycle"
             >
-              Submit
+              Submit&nbsp;&nbsp;<i className="fa fa-paper-plane" aria-hidden="true"></i>
             </button>
           </form>
         

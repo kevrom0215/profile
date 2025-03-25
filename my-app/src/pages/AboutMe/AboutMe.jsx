@@ -67,7 +67,7 @@ const AboutMe = () => {
             refining my development skills.
           </p>
           <div className="center resume">
-            <a href={Resume} download="Kenneth_Resume.pdf">Download Resume&nbsp; <i class="fa fa-download" aria-hidden="true"></i></a>
+            <a href={Resume} download="Kenneth_Resume.pdf">Download Resume&nbsp; <i className="fa fa-download" aria-hidden="true"></i></a>
           </div>
         </div>
 
@@ -144,7 +144,7 @@ const AboutMe = () => {
               style={{ height: 150 }}
             />
           </div>
-          <div className="grid-item">
+          <div className="grid-item aws">
             <p>AWS Certified Cloud Practitioner</p>
             <p>Issued on Feb 2025 - Expires 2028</p>
           </div>
