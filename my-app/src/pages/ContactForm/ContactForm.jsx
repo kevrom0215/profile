@@ -12,7 +12,7 @@ export default function ContactForm() {
             <div>
               <label className="flex mb-4">
                 <div>
-                  <span className="text-gray-300 text-xs">Email:</span>
+                  <span className="form-label">Email:</span>
                 </div>
                 <input
                   type="email"
@@ -25,7 +25,7 @@ export default function ContactForm() {
             <div>
               <label className="block mb-4">
                 <div>
-                  <span className="text-gray-200 text-xs">Message:</span>
+                  <span className="form-label">Message:</span>
                 </div>
                 <textarea
                   name="message"

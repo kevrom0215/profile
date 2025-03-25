@@ -9,10 +9,9 @@
   width: 80%;
 }
 
-.about-me{
+.about-me {
   height: 800px;
 }
-
 
 /* Styling for each grid item */
 .grid-item {
@@ -48,7 +47,6 @@
 
 .description {
   line-height: 1.5;
-  margin: auto;
   padding: auto;
   text-align: left;
 }
@@ -92,7 +90,7 @@
   margin: auto;
 }
 
-.grid-carousel{
+.grid-carousel {
   display: grid;
   gap: 1rem;
   width: 100%;
@@ -180,11 +178,11 @@
   min-height: 800px;
 }
 
-.contact-desc{
+.contact-desc {
   text-align: center;
 }
 
-.contact-desc p{
+.contact-desc p {
   font-size: 12px;
 }
 
@@ -230,11 +228,11 @@
     overflow-wrap: break-word;
     white-space: normal;
   }
-  .intro h2{
+  .intro h2 {
     padding: 0px;
     margin: 0px;
   }
-  .grid-container.skills{
+  .grid-container.skills {
     height: auto !important;
   }
 }
@@ -264,28 +262,47 @@
   bottom: 100%; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 .about {
-  width: auto;
+  text-align: left;
+  width: fit-content;
   height: 70px;
   /* grid-template-columns: auto;Aligns content to the start (left) */
 }
 
 .about h2 {
-  display: inline-block;
+  font-size: 40px;
+  display: block; /* Change from inline-block to block */
   text-align: left;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0; /* Gives that scrolling effect as the typing happens */
-  /* width: min-content !important; */
-  animation: typing 3.5s steps(50, end), blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  animation: typing 3.5s steps(50, end) forwards,
+    blink-caret 0.75s step-end infinite;
+
+  border-right: 0.15em solid orange;
 }
+
+h2 {
+  white-space: nowrap;
+  margin: 0;
+  width: fit-content; /* Ensures the element only takes necessary space */
+}
+
 /* The typing effect */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 100%; /* Ensures it expands fully */
+  }
+}
+
+/* Cursor blinking effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
   }
 }
 
@@ -303,10 +320,10 @@
 .center {
   text-align: center;
 }
-.resume{
+.resume {
   margin-top: 1rem;
 }
-.justify{
+.justify {
   text-align: justify;
 }
 
@@ -319,12 +336,11 @@
   text-align: justify;
 }
 
-.grid-container.work{
+.grid-container.work {
   height: 300px;
 }
 
-
-.formy{
+.formy {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
@@ -351,14 +367,15 @@
     align-items: center;
     align-self: center;
     overflow: hidden;
+    height: auto;
   }
   .logo {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
-    
   }
   .social-media-grid {
     display: grid !important;
@@ -374,7 +391,7 @@
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-  .formy{
+  .formy {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -384,14 +401,13 @@
     width: 90%;
     overflow: hidden;
   }
-  .about-me{
+  .about-me {
     gap: 0px 0px; /* 10px row gap, 20px column gap */
   }
-  .skills{
+  .skills {
     padding: 0;
     font-size: large;
   }
-  
 }
 
 .section {
@@ -400,6 +416,7 @@
 }
 
 .logo {
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -407,7 +424,8 @@
   align-self: center;
 }
 
-.grid-item.aws p{
+.grid-item.aws p {
   font-weight: 300;
   line-height: 12px;
+  font-size: medium;
 }
