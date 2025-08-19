@@ -336,10 +336,6 @@ h2 {
   text-align: justify;
 }
 
-.grid-container.work {
-  height: 300px;
-}
-
 .formy {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -413,6 +409,12 @@ h2 {
 .section {
   padding-top: 2rem;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .section {
+    width: 100%;
+  }
 }
 
 .logo {

@@ -52,12 +52,12 @@ const AboutMe = () => {
         </div>
         <div className="grid-container skills">
           <p className="justify">
-            Full Stack Developer with 3 years of experience specializing in
+            Full Stack Developer with 4 years of experience specializing in
             school management systems, including curriculum development, order
             processing, events, user, and student management. Proficient in
             Java, Angular, and AWS, with expertise in backend and frontend
             development across the full software lifecycle. <br></br><br></br>Currently, I work at
-            Pointwest, where I develop user-facing applications as a full stack
+            Accenture as a Senior Developer, where I develop user-facing applications as a full stack
             Java developer. I focus on building accessible, high-performing, and
             visually appealing web experiences while ensuring seamless
             functionality across the stack. <br></br><br></br>When I'm not coding, you'll find me
@@ -77,7 +77,7 @@ const AboutMe = () => {
           </div>
           <div className="grid-item">
             <p className="description">
-              I have been working as a full-stack developer for three years and
+              I have been working as a full-stack developer for four years and
               continuously seek to expand my expertise in new technologies.
               Some technologies I have worked with
             </p>
