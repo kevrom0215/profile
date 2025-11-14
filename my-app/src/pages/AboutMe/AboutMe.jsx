@@ -1,34 +1,13 @@
 import React, { useState, useEffect } from "react";
-import kenneth from "../../assets/me.jpg";
-import car from "../../assets/car.jpeg";
-import hills from "../../assets/hills.jpeg";
 import "./AboutMe.css";
 import ContactForm from "../ContactForm/ContactForm";
 import skills from "../../assets/skills.json";
-import point from "../../assets/point.png";
 import SkillCarousel from "../../components/Carousel/SkillCarousel";
 import ContactMe from "../ContactMe/ContactMe";
 import Resume from "../../assets/Kenneth_Resume.pdf"
 
 const AboutMe = () => {
   const [index, setIndex] = useState(0);
-  const images = [kenneth, car, hills];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup function
-  }, []);
-
-  const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevSlide = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
 
   return (
     <div>
@@ -43,11 +22,6 @@ const AboutMe = () => {
               I specialize in full-stack development and cloud data engineering,
               working with Java, Angular, and AWS.
             </p>
-          </div>
-          <div className="grid-item" style={{ textAlign: "center" }}>
-            <div className="instax">
-              <img src={images[index]} alt="Slideshow" className="slide" />
-            </div>
           </div>
         </div>
         <div className="grid-container skills">

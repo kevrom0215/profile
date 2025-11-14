@@ -176,6 +176,7 @@
   align-content: center;
   overflow: hidden;
   min-height: 800px;
+  background-color: whitesmoke;
 }
 
 .contact-desc {
